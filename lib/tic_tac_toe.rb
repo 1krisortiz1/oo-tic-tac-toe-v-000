@@ -97,6 +97,8 @@ class TicTacToe
       win_combo = won?
       if win_combo
        @board[win_combo[0]]
+     else
+       TicTacToe.new
      end
    end
 
