@@ -94,12 +94,10 @@ class TicTacToe
     end
 
     def winner
-      win_combo = won?
-      if win_combo
-       @board[win_combo[0]]
-     else
-       TicTacToe.new
-     end
+      combo = won?
+      if combo 
+        @board[combo[0]]
+      end
    end
 
     def play
@@ -110,5 +108,4 @@ class TicTacToe
           puts "Cat's Game!"
         end
       end
-
 end
