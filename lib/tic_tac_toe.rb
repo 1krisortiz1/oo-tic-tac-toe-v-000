@@ -57,7 +57,7 @@ class TicTacToe
      input = gets.strip
      input - input_to_index(input)
    end
-   
+
    def won?
      WIN_COMBINATIONS.detect do |win_combo|
        win_index_1 = win_combo[0]
